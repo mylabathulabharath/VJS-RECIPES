@@ -144,7 +144,7 @@ def krishna():
 def allurisitaramaraju():
     return render_template('allurisitaramaraju.html')
 def create_connection():
-    conn=sqlite3.connect('user.db')
+    conn=sqlite3.connect('user2.db')
     return conn
 def create_table():
     conn=create_connection()
