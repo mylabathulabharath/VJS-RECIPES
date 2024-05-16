@@ -2,6 +2,10 @@ from flask import Flask, render_template, request, session,redirect,url_for
 import sqlite3
 import random
 from twilio.rest import Client
+import requests
+
+url = 'https://api.twilio.com/2010-04-01/Accounts/AC51f16b1eab9805152252f38bc95fb285/Messages.json'
+response = requests.get(url, verify=False)
 
 app=Flask(__name__)
 app.secret_key='123456qwerty'
