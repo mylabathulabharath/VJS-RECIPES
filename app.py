@@ -4,15 +4,14 @@ import random
 from twilio.rest import Client
 import requests
 
-url = 'https://api.twilio.com/2010-04-01/Accounts/AC51f16b1eab9805152252f38bc95fb285/Messages.json'
-response = requests.get(url, verify=False)
+
 
 app=Flask(__name__)
 app.secret_key='123456qwerty'
 
-sid="AC51f16b1eab9805152252f38bc95fb285"
-token="a8cca2eef0dc0e438801761027ca2a97"
-my_num="+15097742255"
+sid="AC439e4b0f77fd727a91356843af773d4a"
+token="6199339f2000e6d8c94875d087aa05dc"
+my_num="+16592668431"
 
 
 
