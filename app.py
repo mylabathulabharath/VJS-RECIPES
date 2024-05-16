@@ -66,6 +66,7 @@ def registration():
         conn.cursor().execute('''INSERT INTO VJS (USERNAME,PASSWORD) VALUES(?,?)''',(uname,pswd))
         conn.commit()
         conn.close()
+        return render_template('index.html')
     return render_template('registration.html')
 
 @app.route('/home')
