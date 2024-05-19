@@ -10,7 +10,7 @@ app=Flask(__name__)
 app.secret_key='123456qwerty'
 
 sid="AC439e4b0f77fd727a91356843af773d4a"
-token="6199339f2000e6d8c94875d087aa05dc"
+token="614779f4b34dc2f3404fce9e51bbf3d2"
 my_num="+16592668431"
 
 
@@ -35,7 +35,7 @@ def index():
             message=client.messages.create(
             body=otp,
             from_=my_num,
-            to='+919182354081'
+            to='+919381666049'
             )
             print(message)
             return render_template('otppage.html')
